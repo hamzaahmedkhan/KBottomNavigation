@@ -16,7 +16,7 @@ buildscript {
 build.gradle (module path)
 ```groovy
 dependencies {
-  implementation 'com.hk.kbottomnavigation:1.0.0'
+  implementation 'com.github.hamzaahmedkhan:KBottomNavigation:1.0.0'
 }
 ```
 use androidx by adding this lines to gradle.properties
