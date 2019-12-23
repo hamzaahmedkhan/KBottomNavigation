@@ -1,6 +1,9 @@
 # Kotlin Bottom Navigation
 A simple & curved & material bottom navigation for Android written in kotlin
 
+[![](https://jitpack.io/v/hamzaahmedkhan/KBottomNavigation.svg)](https://jitpack.io/#hamzaahmedkhan/KBottomNavigation)
+
+
 ![](https://github.com/hamzaahmedkhan/KBottomNavigation/raw/master/resources/meow-bottom-navigation-normal.gif)
 
 ## Download
