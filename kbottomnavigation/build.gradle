@@ -1,0 +1,54 @@
+apply plugin: 'com.novoda.bintray-release'
+apply plugin: 'com.android.library'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+
+def library_groupId = 'com.hk'
+def library_artifactId = 'k-bottom-navigation'
+def library_versionCode = 1_0_01_00_04
+def library_versionName = '1.0.4'
+
+publish {
+
+    userOrg = 'hk'
+    repoName = 'bottomnavigation'
+    groupId = library_groupId
+    artifactId = library_artifactId
+    publishVersion = library_versionName
+    desc = 'Kotlin Bottom Navigation'
+    website = 'https://github.com/hamzaahmedkhan/KBottomNavigation'
+
+}
+
+android {
+    compileSdkVersion compileSdk_version
+
+    defaultConfig {
+        minSdkVersion minSdk_version
+        targetSdkVersion targetSdk_version
+        versionCode library_versionCode
+        versionName library_versionName
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation "androidx.appcompat:appcompat:1.0.2"
+    implementation "androidx.core:core-ktx:1.0.2"
+}
